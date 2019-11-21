@@ -8,6 +8,8 @@ using std::string;
 typedef struct {
     string name;
     unsigned short grade;
+
+    string to_string();
 } discipline;
 
 #endif //COLLECTIONS_DISCIPLINE_H
