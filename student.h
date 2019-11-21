@@ -1,0 +1,8 @@
+//
+// Created by YULIA on 21.11.2019.
+//
+
+#ifndef COLLECTIONS_STUDENT_H
+#define COLLECTIONS_STUDENT_H
+
+#endif //COLLECTIONS_STUDENT_H
