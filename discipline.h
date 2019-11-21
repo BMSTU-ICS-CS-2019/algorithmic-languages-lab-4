@@ -7,7 +7,7 @@ using std::string;
 
 typedef struct {
     string name;
-    unsigned short session_results;
+    unsigned short grade;
 } discipline;
 
 #endif //COLLECTIONS_DISCIPLINE_H
