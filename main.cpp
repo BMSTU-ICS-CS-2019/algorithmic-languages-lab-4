@@ -1,4 +1,3 @@
-#include "discipline.h"
 #include "student.h"
 
 #include <iostream>
