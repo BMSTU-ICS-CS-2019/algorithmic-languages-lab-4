@@ -1,8 +1,13 @@
 #ifndef COLLECTIONS_DISCIPLINE_H
 #define COLLECTIONS_DISCIPLINE_H
 
-typedef struct {
+#include <string>
 
+using std::string;
+
+typedef struct {
+    string name;
+    unsigned short session_results;
 } discipline;
 
 #endif //COLLECTIONS_DISCIPLINE_H
