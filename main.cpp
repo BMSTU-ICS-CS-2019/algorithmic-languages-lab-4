@@ -1,3 +1,6 @@
+#include "discipline.h"
+#include "student.h"
+
 #include <iostream>
 #include <vector>
 
@@ -14,7 +17,8 @@ int main() {
     cin >> count;
 
     for (size_t i = 0; i < count; i++) {
-        // TODO logic
+        student student;
+        // TODO read student
     }
 
     cout << "Thanks and Goodbye";
