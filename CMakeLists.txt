@@ -3,4 +3,4 @@ project(Collections)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Collections main.cpp student.cpp student.h)
+add_executable(Collections main.cpp student.cpp student.h discipline.cpp discipline.h)
