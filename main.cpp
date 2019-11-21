@@ -42,12 +42,14 @@ int main() {
         students[i] = student;
     }
 
-    sort(students.begin(), students.end(), [](auto &student1, auto &student2) -> bool {
-        if (student1.name < student2.name) return true;
-        if (student1.name > student2.name) return false;
+    sort(students.begin(), students.end(), [](student &student1, student &student2) -> bool {
+        auto comparison_result = student1.name.compare(student2.name);
+        if (comparison_result < 0) return true;
+        if (comparison_result > 0) return false;
 
-        if (student1.surname < student2.surname) return true;
-        if (student1.surname > student2.surname) return false;
+        comparison_result = student1.surname.compare(student2.surname);
+        if (comparison_result < 0) return true;
+        if (comparison_result > 0) return false;
 
         return student1.patronymic <= student2.patronymic;
     });
