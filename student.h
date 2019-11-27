@@ -11,7 +11,9 @@ typedef struct {
     string name, surname, patronymic;
     vector<discipline> disciplines;
 
-    string to_string();
+    float get_average_grade() const;
+
+    string to_string() const;
 } student;
 
 #endif //COLLECTIONS_STUDENT_H

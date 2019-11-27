@@ -9,7 +9,7 @@ typedef struct {
     string name;
     unsigned short grade;
 
-    string to_string();
+    string to_string() const;
 } discipline;
 
 #endif //COLLECTIONS_DISCIPLINE_H

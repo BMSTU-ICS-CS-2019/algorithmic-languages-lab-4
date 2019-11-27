@@ -7,6 +7,7 @@
 using std::cin;
 using std::cout;
 using std::endl;
+using std::max;
 using std::sort;
 using std::vector;
 
@@ -55,7 +56,19 @@ int main() {
     });
 
     cout << "Sorted:" << endl;
-    for (auto &student : students) cout << "\t" << student.to_string() << endl;
+
+    auto max_average_grade = 0.f;
+    for (const auto &student : students) {
+        {
+            const auto average_grade = student.get_average_grade();
+            if (average_grade > max_average_grade) max_average_grade = average_grade;
+        }
+
+        cout << "\t" << student.to_string() << endl;
+    }
+    cout << "Students with the highest average grade (" << max_average_grade << " ):" << endl;
+    for (const auto &student : students) if (student.get_average_grade() == max_average_grade) cout
+            << "\t" << student.to_string() << endl;
 
     cout << "Thanks and Goodbye";
 }
